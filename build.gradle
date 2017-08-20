@@ -2,7 +2,7 @@ buildscript {
     repositories {
         mavenCentral()
         mavenLocal()
-        
+
         maven {
             name = "forgeFS"
             url = "http://files.minecraftforge.net/maven"
@@ -54,7 +54,8 @@ configurations {
 }
 
 dependencies {
-    dynmap group: 'us.dynmap', name: 'DynmapCoreAPI', version: "${config.Dynmap_version}${config.DynmapCore_devversion}", ext: 'jar'
+    //dynmap group: 'us.dynmap', name: 'dynmap', version: "3.0-SNAPSHOT", ext: 'jar'
+    compile files('libs/DynmapCoreAPI-3.0-SNAPSHOT.jar')
 }
 
 processResources
